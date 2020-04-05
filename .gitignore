@@ -1,0 +1,9 @@
+# Ignore everything
+/*
+/*/
+
+# What want to tracking
+!.gitignore
+!/Assets/
+!/Packages
+!/ProjectSettings/
