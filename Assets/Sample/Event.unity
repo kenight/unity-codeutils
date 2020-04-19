@@ -154,7 +154,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709ceac849570024dac7a8763aff9731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: {fileID: 11400000, guid: d09b76e687628d3468310c1357d4b775, type: 2}
+  hp:
+    useConstant: 0
+    constantValue: 0
+    floatVariable: {fileID: 11400000, guid: d09b76e687628d3468310c1357d4b775, type: 2}
   onPlayerDamaged: {fileID: 11400000, guid: d702d2d3e7f7b7d4d9a62875ee52dfcb, type: 2}
 --- !u!135 &1108130
 SphereCollider:

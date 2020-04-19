@@ -3,12 +3,12 @@ using CodeUtils;
 
 public class Player : MonoBehaviour
 {
-    public FloatVariable hp;
+    public FloatReference hp;
     public GameEvent onPlayerDamaged;
 
     void Start()
     {
-        hp.value = 100;
+        hp.Value = 100;
     }
 
     void Update()
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
     void TakeDamage()
     {
-        hp.value -= 10;
+        hp.Value -= 10;
         onPlayerDamaged?.Raise();
     }
 }
