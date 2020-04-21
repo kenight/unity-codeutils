@@ -18,6 +18,6 @@ public class PlayerUI : MonoBehaviour
 
     public void ChangeHP()
     {
-        hpImage.fillAmount = hp.value / 100;
+        hpImage.fillAmount = hp.Value / 100;
     }
 }

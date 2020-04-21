@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
-/* 静态对象池
-特点：
-1.固定对象池大小，且对象池中对象固定，只交换顺序
-2.取出对象时不关心对象是否已被回收
-3.不能用Destory删除取出的对象
- */
+/// <summary>
+/// 静态对象池
+/// 特点：
+/// 1.固定对象池大小，且对象池中对象固定，只交换顺序
+/// 2.取出对象时不关心对象是否已被回收
+/// 3.不能用Destory删除取出的对象
+/// </summary>
 namespace CodeUtils
 {
     [CreateAssetMenu(menuName = "Scriptable/Pool/Staic Pool")]

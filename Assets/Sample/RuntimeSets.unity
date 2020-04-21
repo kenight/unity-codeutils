@@ -150,10 +150,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 212755474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe1b1df12b9354498dae885985c1199, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d2b417178b74d4fa187d2245a41d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeSet: {fileID: 11400000, guid: 50a92ef1ca446c84b9270d3b10973100, type: 2}
+  runtimeSet: {fileID: 11400000, guid: 55a8da2b94815044f86ad245ce1ef02b, type: 2}
 --- !u!65 &212755476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -257,10 +257,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 474226820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe1b1df12b9354498dae885985c1199, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d2b417178b74d4fa187d2245a41d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeSet: {fileID: 11400000, guid: 50a92ef1ca446c84b9270d3b10973100, type: 2}
+  runtimeSet: {fileID: 11400000, guid: 55a8da2b94815044f86ad245ce1ef02b, type: 2}
 --- !u!65 &474226822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 810678121}
   - component: {fileID: 810678120}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas - Use UI Button to Raise GameEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,10 +540,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1280814011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe1b1df12b9354498dae885985c1199, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d2b417178b74d4fa187d2245a41d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeSet: {fileID: 11400000, guid: 50a92ef1ca446c84b9270d3b10973100, type: 2}
+  runtimeSet: {fileID: 11400000, guid: 55a8da2b94815044f86ad245ce1ef02b, type: 2}
 --- !u!65 &1280814013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -647,10 +647,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1299789590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe1b1df12b9354498dae885985c1199, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d2b417178b74d4fa187d2245a41d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeSet: {fileID: 11400000, guid: 50a92ef1ca446c84b9270d3b10973100, type: 2}
+  runtimeSet: {fileID: 11400000, guid: 55a8da2b94815044f86ad245ce1ef02b, type: 2}
 --- !u!65 &1299789592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c9293c45397942ad71c3be9614c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeSet: {fileID: 11400000, guid: 50a92ef1ca446c84b9270d3b10973100, type: 2}
+  runtimeSet: {fileID: 11400000, guid: 55a8da2b94815044f86ad245ce1ef02b, type: 2}
 --- !u!4 &1383201124
 Transform:
   m_ObjectHideFlags: 0
@@ -1196,10 +1196,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2098643802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe1b1df12b9354498dae885985c1199, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d2b417178b74d4fa187d2245a41d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeSet: {fileID: 11400000, guid: 50a92ef1ca446c84b9270d3b10973100, type: 2}
+  runtimeSet: {fileID: 11400000, guid: 55a8da2b94815044f86ad245ce1ef02b, type: 2}
 --- !u!65 &2098643804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1303,10 +1303,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2119641688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe1b1df12b9354498dae885985c1199, type: 3}
+  m_Script: {fileID: 11500000, guid: c4d2b417178b74d4fa187d2245a41d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeSet: {fileID: 11400000, guid: 50a92ef1ca446c84b9270d3b10973100, type: 2}
+  runtimeSet: {fileID: 11400000, guid: 55a8da2b94815044f86ad245ce1ef02b, type: 2}
 --- !u!65 &2119641690
 BoxCollider:
   m_ObjectHideFlags: 0

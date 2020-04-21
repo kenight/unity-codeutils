@@ -3,7 +3,7 @@ using CodeUtils;
 
 public class HideRuntimeSet : MonoBehaviour
 {
-    public ObjectRuntimeSet runtimeSet;
+    public RuntimeSet runtimeSet;
 
     void Update()
     {

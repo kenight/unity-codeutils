@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-// 对象池基类
+/// <summary>
+/// 对象池基类
+/// </summary>
 namespace CodeUtils
 {
     public abstract class Pool : ScriptableObject

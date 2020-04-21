@@ -9,6 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f793f82283aca0c45b687b7c4155971e, type: 3}
-  m_Name: CubeRuntimeSet
+  m_Script: {fileID: 11500000, guid: 8ada4bf269f1178498e24dcba3a37f94, type: 3}
+  m_Name: AudioSingleton
   m_EditorClassIdentifier: 
+  Instance: {fileID: 0}

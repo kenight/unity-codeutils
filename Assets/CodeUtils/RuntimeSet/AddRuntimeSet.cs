@@ -2,9 +2,9 @@
 
 namespace CodeUtils
 {
-    public class AddObjectRuntimeSet : MonoBehaviour
+    public class AddRuntimeSet : MonoBehaviour
     {
-        public ObjectRuntimeSet runtimeSet;
+        public RuntimeSet runtimeSet;
 
         void OnEnable()
         {
@@ -16,4 +16,5 @@ namespace CodeUtils
             runtimeSet.Remove(this.gameObject);
         }
     }
+
 }

@@ -13,7 +13,7 @@ namespace CodeUtils
         {
             get
             {
-                return useConstant ? constantValue : floatVariable.value;
+                return useConstant ? constantValue : floatVariable.Value;
             }
 
             set
@@ -21,7 +21,7 @@ namespace CodeUtils
                 if (useConstant)
                     constantValue = value;
                 else
-                    floatVariable.value = value;
+                    floatVariable.Value = value;
             }
         }
     }
