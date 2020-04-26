@@ -2,6 +2,6 @@
 
 namespace CodeUtils
 {
-    [CreateAssetMenu(menuName = "Scriptable/RuntimeSet", fileName = "New RuntimeSet")]
+    [CreateAssetMenu(menuName = "Scriptable/RuntimeSet")]
     public class RuntimeSet : RuntimeSetBase<GameObject> { }
 }

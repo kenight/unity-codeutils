@@ -3,7 +3,7 @@ using UnityEngine;
 using CodeUtils;
 
 
-public class Missile : MonoBehaviour, IPoolable
+public class Missile : MonoBehaviour, IPoolSystem
 {
     public float power = 10f;
     public float destoryTime = 2f;
@@ -11,7 +11,8 @@ public class Missile : MonoBehaviour, IPoolable
     Rigidbody rigid;
     float timer;
 
-    public Pool Pool { get; set; }
+    public PoolSystem poolSystem { get; set; }
+    public GameObject poolKey { get; set; }
 
     void Awake()
     {
@@ -29,7 +30,7 @@ public class Missile : MonoBehaviour, IPoolable
         if (timer > destoryTime)
         {
             timer -= destoryTime;
-            Pool.Reuse(gameObject);
+            poolSystem.Recycle(poolKey, gameObject);
         }
     }
 }
