@@ -51,5 +51,11 @@ namespace CodeUtils
         {
             return Get(prefab).GetComponent<T>();
         }
+
+        // 清空对象池，特别是重新加载场景等时需要清空
+        public void Clear()
+        {
+            pool.Clear();
+        }
     }
 }
