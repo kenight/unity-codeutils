@@ -7,10 +7,10 @@ public class PoolSpawner : MonoBehaviour
     public float upForce = 20f;
     public float sideForce = 5f;
     public float rate = 1f;
-    public PoolSystem poolSystem;
-    public GameObject prefab1;
-    public GameObject prefab2;
-    public GameObject missile;
+    public Pool pool;
+    public Rigidbody prefab1;
+    public Rigidbody prefab2;
+    public Missile missile;
 
     void Start()
     {
@@ -27,28 +27,28 @@ public class PoolSpawner : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            var m = poolSystem.Get<Missile>(missile);
+            var m = pool.Get(missile);
             m.transform.position = transform.position * 5f;
         }
     }
 
-    void Launch(GameObject obj)
+    void Launch(Rigidbody obj)
     {
         float xForce = Random.Range(-sideForce, sideForce);
         float yForce = Random.Range(upForce / 2, upForce);
         float zForce = Random.Range(-sideForce, sideForce);
 
-        var rb = poolSystem.Get<Rigidbody>(obj);
+        var rb = pool.Get(obj);
 
         rb.position = transform.position + new Vector3(Random.value * 2, 0, Random.value * 2);
         rb.velocity = new Vector3(xForce, yForce, zForce);
-        StartCoroutine(ReuseObject(obj, rb.gameObject));
+        StartCoroutine(ReuseObject(obj, rb));
     }
 
     // 回收该对象
-    IEnumerator ReuseObject(GameObject key, GameObject obj)
+    IEnumerator ReuseObject(Rigidbody key, Rigidbody obj)
     {
         yield return new WaitForSeconds(5f);
-        poolSystem.Recycle(key, obj);
+        pool.Recycle(key, obj);
     }
 }

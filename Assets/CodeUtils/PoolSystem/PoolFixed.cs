@@ -10,52 +10,50 @@ using UnityEngine;
 /// </summary>
 namespace CodeUtils
 {
-    [CreateAssetMenu(menuName = "Scriptable/Pool System/Fixed Pool")]
-    public class FixedPoolSystem : ScriptableObject
+    [CreateAssetMenu(menuName = "Scriptable/Pool System/Pool Fixed")]
+    public class PoolFixed : ScriptableObject
     {
-        Dictionary<GameObject, Queue<GameObject>> pool = new Dictionary<GameObject, Queue<GameObject>>();
+        Dictionary<Object, Queue<Object>> pool = new Dictionary<Object, Queue<Object>>();
 
-        public void InitPool(GameObject prefab, int size)
+        public void InitPool(Object prefab, int size)
         {
             if (pool.ContainsKey(prefab))
                 return;
-            Queue<GameObject> queue = new Queue<GameObject>();
+            Queue<Object> queue = new Queue<Object>();
             for (int i = 0; i < size; i++)
             {
                 var obj = Instantiate(prefab);
-                obj.SetActive(false);
+                GetGameObject(obj).SetActive(false);
                 queue.Enqueue(obj);
             }
             pool.Add(prefab, queue);
         }
 
-        public GameObject Get(GameObject prefab)
+        public T Get<T>(T prefab) where T : Object
         {
-            GameObject obj;
-            Queue<GameObject> queue;
+            Object obj;
+            Queue<Object> queue;
             if (pool.TryGetValue(prefab, out queue))
             {
                 if (queue.Count > 0)
                 {
                     obj = queue.Dequeue();
                     queue.Enqueue(obj);
-                    obj.SetActive(true);
-                    return obj;
+                    GetGameObject(obj).SetActive(true);
+                    return obj as T;
                 }
             }
             Debug.LogError("No pool was init with this prefab");
             return null;
         }
 
-        public T Get<T>(GameObject prefab) where T : Component
-        {
-            return Get(prefab).GetComponent<T>();
-        }
+        public void Clear() => pool.Clear();
 
-        // 清空对象池，特别是重新加载场景等时需要清空
-        public void Clear()
+        GameObject GetGameObject(Object obj)
         {
-            pool.Clear();
+            if (obj is Component comp)
+                return comp.gameObject;
+            return obj as GameObject;
         }
     }
 }

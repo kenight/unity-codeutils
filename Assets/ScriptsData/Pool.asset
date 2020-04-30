@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e681561bf8a6a744693f15a0fdd5724e, type: 3}
-  m_Name: PoolSystem
+  m_Script: {fileID: 11500000, guid: 0a025710c13a28949b89b0df0d33ac4f, type: 3}
+  m_Name: Pool
   m_EditorClassIdentifier: 

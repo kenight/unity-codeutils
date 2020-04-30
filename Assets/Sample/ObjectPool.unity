@@ -330,10 +330,10 @@ MonoBehaviour:
   upForce: 20
   sideForce: 5
   rate: 0.1
-  poolSystem: {fileID: 11400000, guid: c149810ad5cd26e4b9b0acd7bd4ec526, type: 2}
-  prefab1: {fileID: 4716851666253978777, guid: 3c1753d846656bd4d99345666250fe03, type: 3}
-  prefab2: {fileID: 6983808482156570066, guid: e96d855c0282caa49bdbe19292817590, type: 3}
-  missile: {fileID: 6405808407988388704, guid: 59b424ec7b9e4ba40b28b70c0075eff1, type: 3}
+  pool: {fileID: 11400000, guid: e38d231975c4b694684ae388f2fc89cc, type: 2}
+  prefab1: {fileID: 4716851666253978772, guid: 3c1753d846656bd4d99345666250fe03, type: 3}
+  prefab2: {fileID: 6983808482156570079, guid: e96d855c0282caa49bdbe19292817590, type: 3}
+  missile: {fileID: 6405808407988388710, guid: 59b424ec7b9e4ba40b28b70c0075eff1, type: 3}
 --- !u!4 &1577945163
 Transform:
   m_ObjectHideFlags: 0
@@ -456,7 +456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1971759803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,9 +469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e563cfb8fd7e04bb7a385ca12360fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedPoolSystem: {fileID: 11400000, guid: e66f4622c4c7b2d4598afc689650a968, type: 2}
+  pool: {fileID: 11400000, guid: a34d162c0ee64414f95f5f3ca2e37039, type: 2}
   prefab1: {fileID: 4716851666253978777, guid: 3c1753d846656bd4d99345666250fe03, type: 3}
-  prefab2: {fileID: 6983808482156570066, guid: e96d855c0282caa49bdbe19292817590, type: 3}
+  prefab2: {fileID: 6983808482156570079, guid: e96d855c0282caa49bdbe19292817590, type: 3}
 --- !u!4 &1971759804
 Transform:
   m_ObjectHideFlags: 0
